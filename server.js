@@ -4,6 +4,8 @@ import cors from 'cors';
 import {app_router} from './routes/restaurant.router.js'
 import path from 'path'
 
+const __dirname = path.resolve();
+
 dotenv.config();
 
 const app = express();
