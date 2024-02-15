@@ -14,7 +14,7 @@ const McDonaldsMenu = () => {
   
   const getMenu = async() => {
     try {
-        const response = await axios.get('http://localhost:3001/api/Mcdonalds')
+        const response = await axios.get('https://food-ordering-app-project.onrender.com/api/Mcdonalds')
         const data = response.data
         setMenu(data)
     } catch (error) {
