@@ -14,8 +14,6 @@ app_router.post('/register', register);
 
 app_router.post('/login', login);
 
-app_router.get('/', verifytoken, all);
-
 app_router.get('/verify', verifytoken, (req, res) => {
     res.sendStatus(200);
 })
