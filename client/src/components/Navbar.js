@@ -8,6 +8,8 @@ const Navbar = () => {
       </div>
       <div className="navbar-links-container">
         <a href="/">Home</a>
+        <Link to="/Login">Login</Link>
+        <Link to="/Profile">Profile</Link>
         <div class="dropdown">
           <button class="dropbtn">Restaurants</button>
           <div class="dropdown-content">
