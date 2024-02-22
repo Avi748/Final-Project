@@ -26,9 +26,9 @@ function App() {
   }
 
   return (
-    <AuthContext.Provider value={{token, setToken}}>
     <div>
       <CartProvider>
+      <AuthContext.Provider value={{token, setToken}}>
       {cartIsShown && <Cart onClose={hideCartHandler}/>}
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -39,9 +39,9 @@ function App() {
         <Route path='/McDonalds' element={<McDonalds onShowCart={showCartHandler} onClose={hideCartHandler}/>}/>
         <Route path='/Gabay' element={<Gabay onShowCart={showCartHandler} onClose={hideCartHandler}/>}/>
       </Routes>
+      </AuthContext.Provider>
       </CartProvider>
     </div>
-    </AuthContext.Provider>
   );
 }
 
